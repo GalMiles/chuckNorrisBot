@@ -77,6 +77,7 @@ bot.on('text', (ctx) => {
 });
 
 bot.launch();
+console.log('bot started');
 
 //os calls to stop the bot
 process.once('SIGINT', () => bot.stop('SIGINT'));
