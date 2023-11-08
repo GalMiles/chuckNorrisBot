@@ -22,8 +22,5 @@
   },
   "repository": {
     "url": "https://github.com/GalMiles/chuckNorrisBot"
-  },
-  "engines": {
-    "node": ">=16.3.0"
   }
 }
