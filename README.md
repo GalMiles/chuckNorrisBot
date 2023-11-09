@@ -1,13 +1,13 @@
 # Chuck Norris Telegram Bot
 
-This is a Chuck Norris Telegram joles bot.
+This is a Chuck Norris Telegram jokes bot.
  
 ## Instructions
 * Git clone this repo and run "npm install"
-* Click [here](t.me/chuck123_bot) for sending message to ChuckBot
+* Click [here](https://t.me/chuck123_bot) for sending a message to ChuckBot
 * Command "/start"
 * Set langauge <language_name>
-* Enter number between 1-101
+* Enter number between 1-101 for a joke
 * Enjoy :grin:
 
 ## Libraries

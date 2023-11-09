@@ -1,5 +1,4 @@
 # Use the official lightweight Node.js 16 image.
-# https://hub.docker.com/_/node
 FROM node:16-slim
 
 # Create and change to the app directory.
@@ -9,7 +8,7 @@ WORKDIR /chuckNorrisBot
 COPY package*.json /chuckNorrisBot/
 
 # Install production dependencies.
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN RUN apt-get update && apt-get install -y --no-install-recommends \
     ca-certificates \
     && npm install --production \
     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false \

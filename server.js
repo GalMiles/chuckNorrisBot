@@ -1,6 +1,6 @@
 import { Telegraf } from 'telegraf';
 import LocalSession from 'telegraf-session-local';
-import fetchData from './scraper.js';
+import scrapeJokes from './scraper.js';
 import {translateText, convertLanguageNameToCode} from './translator.js';
 
 const imageURL = 'https://phantom-marca.unidadeditorial.es/d3b2f6b3f58a422ed456ea28656c47cd/crop/0x0/1022x682/resize/720/f/webp/assets/multimedia/imagenes/2023/07/27/16904939599201.jpg'
@@ -24,7 +24,7 @@ let language='';
 
 //start command
 bot.command('start', async (ctx) =>  {
-    jokes = await fetchData();
+    jokes = await scrapeJokes();
     // console.log('jokes: ', jokes);
     if(jokes != null) {
       ctx.replyWithPhoto(imageURL, {caption: 'Welcome to the Chuck Norris\' Jokes Bot!\n- Set your language by typing "set language <your_language>".\n- Set a number between 1-101 to get a joke.\n- To exit, type click "/exit"'});
