@@ -69,7 +69,6 @@ bot.hears(/\d+/, async (ctx) => {
 
 bot.command('exit', (ctx) => {
   ctx.reply('Bye!');
-  bot.stop('SIGTERM');
 });
 
 bot.on('text', (ctx) => {
@@ -80,7 +79,7 @@ bot.launch();
 console.log('bot started');
 
 //os calls to stop the bot
-process.once('SIGINT', () => bot.stop('SIGINT'));
-process.once('SIGTERM', () => bot.stop('SIGTERM'));
+// process.once('SIGINT', () => bot.stop('SIGINT'));
+// process.once('SIGTERM', () => bot.stop('SIGTERM'));
 
 
