@@ -3,7 +3,6 @@
 This is a Chuck Norris Telegram jokes bot.
  
 ## Instructions
-* Git clone this repo and run "npm install"
 * Click [here](https://t.me/chuck123_bot) for sending a message to ChuckBot
 * Command "/start"
 * Set langauge <language_name>
