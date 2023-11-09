@@ -8,7 +8,7 @@ const url = 'https://parade.com/968666/parade/chuck-norris-jokes/';
 
 async function fetchData() {
 
-  const browser = await puppeteer.launch({headless: false});
+  const browser = await puppeteer.launch({headless: true});
 
     try {
       const page = await browser.newPage();
