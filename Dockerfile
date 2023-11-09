@@ -8,7 +8,7 @@ WORKDIR /chuckNorrisBot
 COPY package*.json /chuckNorrisBot/
 
 # Install production dependencies.
-RUN RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get update && apt-get install -y --no-install-recommends \
     ca-certificates \
     && npm install --production \
     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false \
