@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  nodeapp:
+    build:
+      context: . # The context is the directory containing the Dockerfile, current directory in this case
+      dockerfile: Dockerfile # The location of the Dockerfile
+    #image: your-node-app:latest # Use the image you built and tagged
+    ports:
+      - "80:3000" # Map the port to the host
+    environment:
+      - NODE_ENV=production
+    #restart: always # Ensure the container restarts if it crashes or the server reboots

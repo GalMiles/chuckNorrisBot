@@ -7,8 +7,13 @@ puppeteer.use(StealthPlugin());
 const url = 'https://parade.com/968666/parade/chuck-norris-jokes/';
 
 async function fetchData() {
+  // const executablePath = await new Promise(resolve => locateChrome((arg) => resolve(arg))) || '';
 
-  const browser = await puppeteer.launch({headless: true});
+  const browser = await puppeteer.launch({
+    headless: true,
+    // executablePath,
+    args: ['--no-sandbox', '--disable-setuid-sandbox'],
+  });
 
     try {
       const page = await browser.newPage();
