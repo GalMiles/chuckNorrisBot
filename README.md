@@ -13,3 +13,4 @@ This is a Chuck Norris Telegram jokes bot.
 * [Telegraf](https://github.com/telegraf/telegraf)
 * [Azure AI Translator API](https://learn.microsoft.com/en-us/azure/ai-services/translator/)
 * [cheerio](https://www.npmjs.com/package/cheerio)
+* [iso-639-1](https://www.npmjs.com/package/iso-639-1) - convert to language code
