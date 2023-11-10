@@ -27,7 +27,7 @@ bot.command('start', async (ctx) =>  {
     jokes = await scrapeJokes();
     // console.log('jokes: ', jokes);
     if(jokes != null) {
-      ctx.replyWithPhoto(imageURL, {caption: 'Welcome to the Chuck Norris\' Jokes Bot!\n- Set your language by typing "set language <your_language>".\n- Set a number between 1-101 to get a joke.\n- To exit, type click "/exit"'});
+      ctx.replyWithPhoto(imageURL, {caption: 'Welcome to the Chuck Norris\' Jokes Bot!\n- Set your language by typing "set language <your_language>".\n- Set a number between 1-101 to get a joke.\n- To exit, type "exit"'});
       } else {
         ctx.reply('Sorry, no jokes available.');
     }
@@ -78,8 +78,5 @@ bot.on('text', (ctx) => {
 bot.launch();
 console.log('bot started');
 
-//os calls to stop the bot
-// process.once('SIGINT', () => bot.stop('SIGINT'));
-// process.once('SIGTERM', () => bot.stop('SIGTERM'));
 
 
